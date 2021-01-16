@@ -1,12 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 :root {
-    --myFont: "Noto Sans JP";
+    --myFont: "Fira Sans";
+    --headerFont: "Bebas Neue";
     --dark1: #0a1942;
-    --dark2: #260d5f;
-    --light1: #6266a3;
-    --bright1: #433da3;
+    --dark2: #440230;
+    --light1: #93c9d3;
+    --bright1: #720351;
     --grey0: rgb(226, 226, 226);
     --grey1: rgb(187, 187, 187);
     --grey2: rgb(70, 70, 70);
@@ -16,7 +21,7 @@
 }
 
 body {
-    background: url('/images/background06-key25.png');
+    background: url('/images/background02.png');
     background-size: cover;
     background-attachment: fixed;
     font-family: var(--myFont), sans-serif;
@@ -31,9 +36,9 @@ body #menu {
 }
 
 body #menu-item{
-    font-family: var(--myFont), sans-serif;
+    font-family: var(--headerFont), cursive;
     color: white;
-    font-size: large;
+    font-size: x-large;
     font-weight: 500;
     padding: 0 4em;
     text-align: center;
@@ -57,6 +62,20 @@ body #main-content {
     box-shadow: 0 0 15px 10px var(--bright1);
 }
 
+body #title {
+    font-family: var(--headerFont), cursive;
+    font-size: xxx-large;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    color: var(--grey1);
+    text-shadow: -1px 1px 2px  var(--dark2),
+		1px 1px 2px   var(--dark2),
+		1px -1px 0   var(--dark2),
+        -1px -1px 0   var(--dark2);
+    padding: 1em 0;
+}
+
 body #link {
     color: var(--light1);
 }
@@ -75,8 +94,8 @@ body #footer {
     font-size: small;
 }
 
-body #essay-text {
-    text-align: justify;
+body #blog-post {
+    width: 100%;
 }
 
 body #card {
@@ -91,8 +110,9 @@ body #card-content {
 }
 
 body #resume-title {
-    font-size: xxx-large;
-    font-weight: 800;
+    font-family: var(--headerFont), cursive;
+    font-size: 60pt;
+    font-weight: 600;
     text-align: center;
     text-shadow: -1px 1px 2px  var(--light1),
 		1px 1px 2px   var(--light1),
@@ -151,18 +171,6 @@ body #resume-row {
 .ui.header {
     font-family: var(--myFont), sans-serif;
     color: white
-}
-
-.title {
-    font-size: xxx-large;
-    font-weight: 800;
-    width: 100%;
-    text-align: center;
-    color: var(--grey1);
-    text-shadow: -1px 1px 2px  var(--dark2),
-		1px 1px 2px   var(--dark2),
-		1px -1px 0   var(--dark2),
-		-1px -1px 0   var(--dark2);
 }
 
 .ui.raised.card {

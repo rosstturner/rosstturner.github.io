@@ -31,18 +31,84 @@
                 <div class="ui centered fluid row" id="title">
                     Blog
                 </div>
-                <!--Blog Entry-->
+                <!--Blog Entry 3-->
                 <div class="ui fluid row">
                     <div class="ui grid" id="blog-post">
                         <div class="ui six wide column" id="blog-left">
-                            <img src="images/placeholder.png" class="ui fluid image" id="blog-pic">
+                            <video controls width="100%">
+
+                                <source src="images/ColorWipeTest.mp4"
+                                        type="video/webm">
+
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
                         </div>
                         <div class="ui ten wide column">
                             <div class="row" id="blog-date">
-                                date
+                                Jan 20 2021
                             </div>
                             <div class="row" id="blog-text">
-                                Description
+                                <h3> Testing Color Swipe Effect</h3>
+                                I have been runing various test trying to figure out how to animated one color being taken over by another.
+                                Using the two different textures with a mix node and then using a ramp to control the mix, plus applying noise,
+                                keyframe the values of the ramp and show this swirl effect. I think this will be the best way to do simple color swaps
+                                while rendering. I have also started looking into After Effects to see if I can just render the entire film in black and white
+                                and then again in color. I could then use After Effects and masking to handle all the color swaps in post and also come up with
+                                some neat tracking color swaps so that the robot can do more then just instant change the color of something. Just and idea right now.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end entry-->
+                <!--Blog Entry 2-->
+                <div class="ui fluid row">
+                    <div class="ui grid" id="blog-post">
+                        <div class="ui six wide column" id="blog-left">
+                            <img src="images/ArtBot.jpg" class="ui fluid image" id="blog-pic">
+                        </div>
+                        <div class="ui ten wide column">
+                            <div class="row" id="blog-date">
+                                Jan 18 2021
+                            </div>
+                            <div class="row" id="blog-text">
+                                <h3>Final Character Design and Shader</h3>
+                                Designing out the robot was pretty simple. He is made of of very basic shapes and should be very easy to rig.
+                                Two problem areas with this design are going to be how to animate the wheels going around when they are an
+                                odd shape and the face design moving with the body. The face is unique because it is made from a MASH node,
+                                MASH nodes are super useful but I am not sure how they work with animating. I have completed test in the past
+                                for animating a face in MASH but never having the entire MASH network move along with a character. Finally, I
+                                needed to work on the style for my film. I took inspiration from the latest Spiderman and decided on a Halftone
+                                Toon Shader texture. This was not as easy as the modeling phase as I had to build the entire texture from scratch.
+                                There is a built in Halftone texture in Maya but sadly will not work with Arnold and it also did not look as nice
+                                as what I was able to achieve in the end. I tied everything together in the end with a color ramp that allowed me to
+                                have the toon shader effect with different sized halftones depending on the color. I think this will work well for my film.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end entry-->
+                <!--Blog Entry 1-->
+                <div class="ui fluid row">
+                    <div class="ui grid" id="blog-post">
+                        <div class="ui six wide column" id="blog-left">
+                            <img src="images/ArtBot.jpg" class="ui fluid image" id="blog-pic">
+                        </div>
+                        <div class="ui ten wide column">
+                            <div class="row" id="blog-date">
+                                Jan 15 2021
+                            </div>
+                            <div class="row" id="blog-text">
+                                <h3>ACM 320 Animated Film Concept</h3>
+                                As a huge fan of Love, Death, and Robots, I wanted to make an animated film about some sort of robot.
+                                Taking inspiration from Wall-E, I thought of a dystopian world. I want it to be bland and without any color.
+                                I then doodled out what my little bot would look like and started to imagin how he would feel in this world.
+                                I then imagined him all of a sudden experiencing color for the first time and I decided that this could be 
+                                the focus of my animated short. With a little help from my wife I talked through my story and we thought it
+                                would be cute if he turns into color for the first time when he gets shocked one day. Because of this shock,
+                                he wanted to bring color to the world and goes out on an adventure bringing turing the bland world into color.
+                                I am still thinking of a good ending but am leaning towards the robot stumnbling across some form of junction box
+                                and thinking that if he shocks it the whole city will be colorful. This of course ends poorly with everything being
+                                shut off leaving the world a dark and colorless place. Just his eyes are seen glowing at the end.
                             </div>
                         </div>
                     </div>

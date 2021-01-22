@@ -38,9 +38,9 @@ body #menu {
 body #menu-item{
     font-family: var(--headerFont), cursive;
     color: white;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 500;
-    padding: 0 4em;
+    padding: 50px 3em 0;
     text-align: center;
     text-shadow: -1px 1px 2px  var(--dark1),
 		1px 1px 2px   var(--dark1),

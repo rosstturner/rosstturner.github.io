@@ -1,148 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Ross T. Turner | Blog</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
-        <link rel="stylesheet" href="css\style.css">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-        <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Ross T. Turner | Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link rel="stylesheet" href="css\style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-    </head>
+</head>
 
-    <body>
-        <!--Menu-->
-        <div id="nav-bar">
+<body>
+    <!--Menu-->
+    <div id="nav-bar">
 
+    </div>
+    <script>
+        $(function () {
+            $("#nav-bar").load("nav.html");
+        });
+    </script>
+
+    <!--Content-->
+    <div class="ui container" style="width: 90%; margin: auto;">
+        <div class="ui centered row" style="padding: 2em;">
+            <p id="title">Blogs<br></p>
         </div>
-        <script>
-            $(function () {
-                $("#nav-bar").load("nav.html");
-            });
-        </script>
+        <div class="row">
+            <div class="ui fluid two stackable centered cards">
 
-        <!--Content-->
-        <div class="ui padded container" id="main-content">
-            <div class="ui padded grid">
-                <div class="ui centered fluid row" id="title">
-                    Blog
-                </div>
-                <!--Blog Entry 4-->
-                <div class="ui fluid row">
-                    <div class="ui grid" id="blog-post">
-                        <div class="ui six wide column" id="blog-left">
-                            <img src="images/Cover.PNG" class="ui fluid image" id="blog-pic">
+                <!--Project Card-->
+                <div class="ui raised card">
+                    <a class="image" id="card" href="/blog-urop.html">
+                        <img src="">
+                    </a>
+                    <div class="content" id="card-content">
+                        <div class="header">UROP</div>
+                        <div class="meta">
+                            <span class="date">Jan 2021 - present</span>
                         </div>
-                        <div class="ui ten wide column">
-                            <div class="row" id="blog-date">
-                                Jan 28 2021
-                            </div>
-                            <div class="row" id="blog-text">
-                                <h3> Animation Script</h3>
-                                    <a href="/Files/Gray-Tones (working title) - script.pdf" target= "_blank" id="link">
-                                    Gray-Tones (Working Title) - Script
-                                    </a>
-                                    <br>I had to change my original story plan as I was writing the script out. I realized that
-                                    I was trying to do to much and would not be able to complete it within 1 minute. Anything
-                                    over one minute would be cutting it to close to finishing within the semester, so I tried
-                                    to think about what else I could do and tell the same story. I decided to only use one set
-                                    and then have the ending take place from our view through the window on the set. I hope that
-                                    it still seems playful at the end without the use of the outside world being fully built. I
-                                    also decided to include some dialogue in the form of a radio announcer as I thought it was lacking
-                                    something. This also gave me a better way to introduce the inital shock to the character and I think
-                                    that it plays out better now.
-                            </div>
+                        <div class="meta">
+                            Undergraduate Research Opportunities Grant
+                        </div>
+                        <div class="description">
+                            I received the Undergraduate Research Opportunities Grant from the University of Hawai'i at Manoa.  
+                            See my progress as I research photogrammetry and its applications in 3D modeling and character design.
                         </div>
                     </div>
+                    <div class="extra content" id="card-extra">
+                        <a href="/blog-urop.html" class="ui fluid button" id="card-button">
+                            See Blog
+                        </a>
+                    </div>
                 </div>
-                <!--end entry-->
-                <!--Blog Entry 3-->
-                <div class="ui fluid row">
-                    <div class="ui grid" id="blog-post">
-                        <div class="ui six wide column" id="blog-left">
-                            <video controls width="100%">
 
-                                <source src="images/ColorWipeTest.mp4"
-                                        type="video/webm">
-
-                                Sorry, your browser doesn't support embedded videos.
-                            </video>
+                <!--Project Card-->
+                <div class="ui raised card">
+                    <a class="image" id="card" href="blog-acm320.html">
+                        <img src="images/ArtBot.jpg">
+                    </a>
+                    <div class="content" id="card-content">
+                        <div class="header">ACM 320</div>
+                        <div class="meta">
+                            <span class="date">Jan 2021 - present</span>
                         </div>
-                        <div class="ui ten wide column">
-                            <div class="row" id="blog-date">
-                                Jan 20 2021
-                            </div>
-                            <div class="row" id="blog-text">
-                                <h3> Testing Color Swipe Effect</h3>
-                                I have been runing various test trying to figure out how to animated one color being taken over by another.
-                                Using the two different textures with a mix node and then using a ramp to control the mix, plus applying noise,
-                                keyframe the values of the ramp and show this swirl effect. I think this will be the best way to do simple color swaps
-                                while rendering. I have also started looking into After Effects to see if I can just render the entire film in black and white
-                                and then again in color. I could then use After Effects and masking to handle all the color swaps in post and also come up with
-                                some neat tracking color swaps so that the robot can do more then just instant change the color of something. Just an idea right now.
-                            </div>
+                        <div class="meta">
+                            
+                        </div>
+                        <div class="description">
+                            Follow my journey as I develop a short animated film for ACM 320.  From storyboarding, to character development, to script writing... get the behind the scenes scoop.
                         </div>
                     </div>
-                </div>
-                <!--end entry-->
-                <!--Blog Entry 2-->
-                <div class="ui fluid row">
-                    <div class="ui grid" id="blog-post">
-                        <div class="ui six wide column" id="blog-left">
-                            <img src="images/ArtBot.jpg" class="ui fluid image" id="blog-pic">
-                        </div>
-                        <div class="ui ten wide column">
-                            <div class="row" id="blog-date">
-                                Jan 18 2021
-                            </div>
-                            <div class="row" id="blog-text">
-                                <h3>Final Character Design and Shader</h3>
-                                Designing out the robot was pretty simple. He is made of of very basic shapes and should be very easy to rig.
-                                Two problem areas with this design are going to be how to animate the wheels going around when they are an
-                                odd shape and the face design moving with the body. The face is unique because it is made from a MASH node,
-                                MASH nodes are super useful but I am not sure how they work with animating. I have completed test in the past
-                                for animating a face in MASH but never having the entire MASH network move along with a character. Finally, I
-                                needed to work on the style for my film. I took inspiration from the latest Spiderman and decided on a Halftone
-                                Toon Shader texture. This was not as easy as the modeling phase as I had to build the entire texture from scratch.
-                                There is a built in Halftone texture in Maya but sadly will not work with Arnold and it also did not look as nice
-                                as what I was able to achieve in the end. I tied everything together in the end with a color ramp that allowed me to
-                                have the toon shader effect with different sized halftones depending on the color. I think this will work well for my film.
-                            </div>
-                        </div>
+                    <div class="extra content" id="card-extra">
+                        <a href="blog-acm320.html" class="ui fluid button" id="card-button">
+                            See Blog
+                        </a>
                     </div>
                 </div>
-                <!--end entry-->
-                <!--Blog Entry 1-->
-                <div class="ui fluid row">
-                    <div class="ui grid" id="blog-post">
-                        <div class="ui six wide column" id="blog-left">
-                            <img src="images/doodle.jpg" class="ui fluid image" id="blog-pic">
-                        </div>
-                        <div class="ui ten wide column">
-                            <div class="row" id="blog-date">
-                                Jan 15 2021
-                            </div>
-                            <div class="row" id="blog-text">
-                                <h3>ACM 320 Animated Film Concept</h3>
-                                As a huge fan of Love, Death, and Robots, I wanted to make an animated film about some sort of robot.
-                                Taking inspiration from Wall-E, I thought of a dystopian world. I want it to be bland and without any color.
-                                I then doodled out what my little bot would look like and started to imagin how he would feel in this world.
-                                I then imagined him all of a sudden experiencing color for the first time and I decided that this could be 
-                                the focus of my animated short. With a little help from my wife I talked through my story and we thought it
-                                would be cute if he turns into color for the first time when he gets shocked one day. Because of this shock,
-                                he wanted to bring color to the world and goes out on an adventure bringing turing the bland world into color.
-                                I am still thinking of a good ending but am leaning towards the robot stumnbling across some form of junction box
-                                and thinking that if he shocks it the whole city will be colorful. This of course ends poorly with everything being
-                                shut off leaving the world a dark and colorless place. Just his eyes are seen glowing at the end.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end entry-->
             </div>
         </div>
 
@@ -156,6 +94,6 @@
                 $("#footer-place").load("footer.html");
             });
         </script>
-    </body>
+</body>
 
 </html>

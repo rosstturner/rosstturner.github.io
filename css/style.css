@@ -118,7 +118,7 @@ body #blog-post {
 
 body #card {
     background-color: var(--card2);
-    opacity: 80%;
+    opacity: 100%;
     color: white;
 }
 body #card-content {
@@ -192,7 +192,7 @@ body #resume-row {
 
 .ui.raised.card {
     margin: 1em;
-    opacity: 0.9;
+    opacity: 1;
     box-shadow: 0 0 5px 2px var(--bright1);
 }
 

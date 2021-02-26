@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ross T. Turner | ACM 499 Blog</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+        <link rel="stylesheet" href="css\style.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    </head>
+
+    <body>
+        <!--Menu-->
+        <div id="nav-bar">
+
+        </div>
+        <script>
+            $(function () {
+                $("#nav-bar").load("nav.html");
+            });
+        </script>
+
+        <!--Content-->
+        <div class="ui padded container" id="main-content">
+            <div class="ui padded grid">
+                <div class="ui centered fluid row" id="title">
+                    ACM 499 Blog
+                </div>
+                
+                <!--Blog Entry 2-->
+                <div class="ui fluid row">
+                    <div class="ui grid" id="blog-post">
+                        <div class="ui six wide column" id="blog-left">
+                            <img src="images/placeholder.png" class="ui fluid image" id="blog-pic">
+                        </div>
+                        <div class="ui ten wide column">
+                            <div class="row" id="blog-date">
+                                Date
+                            </div>
+                            <div class="row" id="blog-text">
+                                <h3>Title</h3>
+                                Text
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end entry-->
+                <!--Blog Entry 1-->
+                <div class="ui fluid row">
+                    <div class="ui grid" id="blog-post">
+                        <div class="ui six wide column" id="blog-left">
+                            <img src="images/placeholder.png" class="ui fluid image" id="blog-pic">
+                        </div>
+                        <div class="ui ten wide column">
+                            <div class="row" id="blog-date">
+                                Date
+                            </div>
+                            <div class="row" id="blog-text">
+                                <h3>Title</h3>
+                                Text
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end entry-->
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <div id="footer-place">
+
+        </div>
+        <script>
+            $(function () {
+                $("#footer-place").load("footer.html");
+            });
+        </script>
+    </body>
+
+</html>
